@@ -1,4 +1,4 @@
 STM32 Code/* linguist-vendored
 *.c linguist-detectable=false
 *.js linguist-detectable=true
-*.HTML linguist-detectable=false
+*.html linguist-detectable=false
