@@ -1,0 +1,21 @@
+<!--  <p>add-bbid works!</p>-->
+<div>
+    <!-- <H2>Add BBid</H2> -->
+    <input type="text" placeholder="BB_id" [(ngModel)]="BBid"><br>
+    <button (click)="addBBid()" >ADD</button><br>
+  </div>
+  <p>{{show}}</p><br>
+
+   <div >
+    <table align="center" border =2>
+      <tr style=background-color:#13e2e2>
+        <!-- <th>BB_id</th> -->
+      </tr>
+      <button (click)="showbbid()" >Show All BBids</button><br>
+     <tr *ngFor="let i of BBID; index as j"> 
+      <td [attr.data-index]="j">{{i.BBid}}</td>
+     </tr>
+    </table>
+   
+  </div><br>
+  <a href="/" >back</a>

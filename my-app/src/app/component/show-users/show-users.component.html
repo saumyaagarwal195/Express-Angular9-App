@@ -1,0 +1,17 @@
+<p>show-users works!</p>
+<div >
+    <table align="center" border =2>
+      <tr style=background-color:#0ddfdf>
+        <th>Email Adderss</th>
+        <th>User name</th>
+        <th>BB_id</th> 
+      </tr>
+         <tr *ngFor="let i of USERS; index as j"> 
+          <td [attr.data-index]="j">{{i.email}}</td>
+          <td [attr.data-index]="j">{{i.username}}</td>
+          <td [attr.data-index]="j">{{i.BBid}}</td>
+         </tr>
+    </table>
+  
+  </div><br>
+  <a href="/" >back</a>
